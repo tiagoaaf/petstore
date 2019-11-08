@@ -72,7 +72,6 @@
           "application/json"
         ],
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -103,11 +102,9 @@
         "description": "",
         "operationId": "updatePet",
         "consumes": [
-          "application/json",
-          "application/xml"
+          "application/json"
         ],
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -146,7 +143,6 @@
         "description": "Multiple status values can be provided with comma separated strings",
         "operationId": "findPetsByStatus",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -190,7 +186,6 @@
         "description": "Returns a single pet",
         "operationId": "getPetById",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -229,7 +224,6 @@
           "application/x-www-form-urlencoded"
         ],
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -349,7 +343,6 @@
         "description": "This can only be done by the logged in user.",
         "operationId": "createUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -379,7 +372,6 @@
         "description": "",
         "operationId": "createUsersWithArrayInput",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -412,7 +404,6 @@
         "description": "",
         "operationId": "createUsersWithListInput",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -445,7 +436,6 @@
         "description": "",
         "operationId": "loginUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -498,7 +488,6 @@
         "description": "",
         "operationId": "logoutUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [],
@@ -518,7 +507,6 @@
         "description": "",
         "operationId": "getUserByName",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -553,7 +541,6 @@
         "description": "This can only be done by the logged in user.",
         "operationId": "updateUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -591,7 +578,6 @@
         "description": "This can only be done by the logged in user.",
         "operationId": "deleteUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [

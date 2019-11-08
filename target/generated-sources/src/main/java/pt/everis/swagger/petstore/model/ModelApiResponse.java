@@ -11,7 +11,7 @@ import javax.validation.constraints.*;
 /**
  * ModelApiResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-11-08T10:44:44.278Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-11-08T14:50:08.605Z")
 
 public class ModelApiResponse   {
   @JsonProperty("code")

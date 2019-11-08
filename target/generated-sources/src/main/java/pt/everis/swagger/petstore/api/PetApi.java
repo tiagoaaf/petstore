@@ -23,7 +23,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 import javax.validation.constraints.*;
 import javax.validation.Valid;
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-11-08T10:44:44.278Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-11-08T14:50:08.605Z")
 
 @Api(value = "pet", description = "the pet API")
 public interface PetApi {
@@ -33,7 +33,7 @@ public interface PetApi {
         @ApiResponse(code = 200, message = "ok response", response = ModelApiResponse.class) })
     
     @RequestMapping(value = "/pet",
-        produces = { "application/xml", "application/json" }, 
+        produces = { "application/json" }, 
         consumes = { "application/json" },
         method = RequestMethod.POST)
     ResponseEntity<ModelApiResponse> addPet(@ApiParam(value = "Pet object that needs to be added to the store" ,required=true )  @Valid @RequestBody Pet body);
@@ -56,7 +56,7 @@ public interface PetApi {
         @ApiResponse(code = 400, message = "Invalid status value", response = Void.class) })
     
     @RequestMapping(value = "/pet/findByStatus",
-        produces = { "application/xml", "application/json" }, 
+        produces = { "application/json" }, 
         method = RequestMethod.GET)
     ResponseEntity<List<Pet>> findPetsByStatus( @NotNull@ApiParam(value = "Status values that need to be considered for filter", required = true, allowableValues = "available, pending, sold", defaultValue = "available") @RequestParam(value = "status", required = true, defaultValue="available") String status);
 
@@ -68,7 +68,7 @@ public interface PetApi {
         @ApiResponse(code = 404, message = "Pet not found", response = Void.class) })
     
     @RequestMapping(value = "/pet/{petId}",
-        produces = { "application/xml", "application/json" }, 
+        produces = { "application/json" }, 
         method = RequestMethod.GET)
     ResponseEntity<Pet> getPetById(@ApiParam(value = "ID of pet to return",required=true ) @PathVariable("petId") Long petId);
 
@@ -90,8 +90,8 @@ public interface PetApi {
         @ApiResponse(code = 405, message = "Validation exception", response = Void.class) })
     
     @RequestMapping(value = "/pet",
-        produces = { "application/xml", "application/json" }, 
-        consumes = { "application/json", "application/xml" },
+        produces = { "application/json" }, 
+        consumes = { "application/json" },
         method = RequestMethod.PUT)
     ResponseEntity<ModelApiResponse> updatePet(@ApiParam(value = "Pet object that needs to be added to the store" ,required=true )  @Valid @RequestBody Pet body);
 
@@ -101,7 +101,7 @@ public interface PetApi {
         @ApiResponse(code = 405, message = "Invalid input", response = Void.class) })
     
     @RequestMapping(value = "/pet/{petId}",
-        produces = { "application/xml", "application/json" }, 
+        produces = { "application/json" }, 
         consumes = { "application/x-www-form-urlencoded" },
         method = RequestMethod.POST)
     ResponseEntity<Void> updatePetWithForm(@ApiParam(value = "ID of pet that needs to be updated",required=true ) @PathVariable("petId") Long petId,@ApiParam(value = "Updated name of the pet") @RequestPart(value="name", required=false)  String name,@ApiParam(value = "Updated status of the pet") @RequestPart(value="status", required=false)  String status);

@@ -40,6 +40,7 @@ public class PetController extends PetApiController {
 		this.getPets = getPets;
 		this.getPetbyId = getPetbyId;
 		this.updatePet = updatePet;
+		this.deletePet = deletePet;
 	}
 
 	@Override
